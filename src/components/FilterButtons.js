@@ -56,12 +56,12 @@ class FilterButtons extends Component {
     const { applyTip, removeTip } = this.state;
     return( 
       <div className="button-holder">
-        <div class="tooltip" onMouseOver={()=>this.hoverApply()} onClick={()=>this.applyFilter()}>
-          <span class="tooltiptext">{applyTip}</span>
+        <div className="tooltip" onMouseOver={()=>this.hoverApply()} onClick={()=>this.applyFilter()}>
+          <span className="tooltiptext">{applyTip}</span>
           <button className="filterButton">Filter Queues</button>
         </div>
-        <div class="tooltip" onMouseOver={()=>this.hoverRemove()} onClick={()=>this.removeFilter()}>
-            <span class="tooltiptext">{removeTip}</span>
+        <div className="tooltip" onMouseOver={()=>this.hoverRemove()} onClick={()=>this.removeFilter()}>
+            <span className="tooltiptext">{removeTip}</span>
             <button className="filterButton">Remove Filter</button>
         </div>
       </div>
@@ -71,6 +71,3 @@ class FilterButtons extends Component {
 
 export default FilterButtons;
 
-<div className="tooltip">Hover over me
-  <span className="tooltiptext">Tooltip text</span>
-</div>
